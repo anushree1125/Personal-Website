@@ -1,0 +1,86 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  background-color: white;
+}
+h2 {
+  text-align: center;
+}
+.introContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+h4 {
+  width: 600px;
+  text-align: justify;
+  line-height: 30px;
+}
+.accordion {
+  width: 100%;
+  /* max-width: 700px; */
+  /* background: rgb(255, 255, 255); */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.accordion input {
+  display: none;
+}
+.accordion label {
+  display: block;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  background: #161717;
+  /* background: #000000; */
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  transition: background 0.3s ease;
+}
+.accordion label:hover {
+  background: #000000;
+}
+/* Add arrow indicator to label */
+.accordion label::after {
+  content: "▸";
+  position: absolute;
+  right: 1.5rem;
+  transition: transform 0.3s ease;
+}
+/* Rotate arrow when checked */
+.accordion input:checked + label::after {
+  transform: rotate(90deg);
+}
+.accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.5rem;
+  /* background: #eeebeb; */
+  /* color: #333; */
+  font-size: 1rem;
+  line-height: 1.4;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+.accordion input:checked + label + .content {
+  max-height: 200px; /* enough to show the content */
+  padding: 1rem 1.5rem;
+}
+.itemContainer {
+  width: 100%;
+  max-width: 700px;
+}
+@media only screen and (max-width: 600px) {
+  h4 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
