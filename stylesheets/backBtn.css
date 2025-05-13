@@ -1,0 +1,23 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin-left: 46%;
+  margin-bottom: 10px;
+}
+i:hover {
+  /* border: 2px solid black; */
+  cursor: pointer;
+}
+i {
+  width: 300px;
+}
+a {
+  color: inherit;
+  align-self: flex-end;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: #d81e1e;
+}
