@@ -4,6 +4,9 @@ html {
   box-sizing: border-box;
   font-family: monospace;
 }
+body {
+  font-size: 20px;
+}
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -36,12 +39,13 @@ img {
   border: 4px double rgb(26, 13, 13);
 }
 .resumeBtn {
-  width: 150px;
-  height: 30px;
+  /* width: 150px; */
+  padding: 20px 30px;
   border-radius: 5px;
   background-color: black;
   color: white;
   font-family: monospace;
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
 }
 .resumeBtn:hover {
   cursor: pointer;
@@ -49,16 +53,17 @@ img {
   color: black;
 }
 .footer {
-  /* width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
-  gap: 40px; */
-  position: fixed;
-  bottom: 0;
-  margin-left: 46%;
-  margin-bottom: 10px;
-}
+  gap: 40px;
 
+  /* margin-bottom: 10px; */
+}
+i {
+  text-align: center;
+  font-size: larger;
+}
 i:hover {
   border-bottom: 2px solid black;
   cursor: pointer;
@@ -90,5 +95,8 @@ i:hover {
   .navbar {
     justify-content: space-around;
     gap: 10px;
+  }
+  .resumeBtn {
+    padding: 10px 20px;
   }
 }
