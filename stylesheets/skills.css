@@ -12,9 +12,7 @@ html {
   font-size: 18px; /* Base font size */
 }
 body {
-  margin-top: 20px;
   font-size: 1rem; /* 16px */
-  line-height: 1.5;
 }
 h2 {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
@@ -22,6 +20,7 @@ h2 {
 div {
   /* Responsive font size */
   text-align: center;
+  line-height: 1.5;
 }
 p {
   font-size: clamp(0.6rem, 2vw, 1.125rem); /* Responsive font size */
