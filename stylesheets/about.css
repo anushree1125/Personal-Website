@@ -5,6 +5,9 @@ html {
   font-family: monospace;
   background-color: white;
 }
+/* body {
+  margin-top: 20px;
+} */
 h2 {
   text-align: center;
 }
@@ -12,6 +15,7 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 h4 {
   width: 600px;
