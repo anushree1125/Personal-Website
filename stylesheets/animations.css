@@ -1,0 +1,42 @@
+.slideInLeft {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInLeft 2s ease-in 2s forwards;
+}
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Type writer effect */
+.typewriter {
+  font-family: monospace;
+  font-size: 24px;
+  display: inline-block;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(20, end) infinite, blink 0.7s step-end;
+}
+@keyframes typing {
+  0%,
+  10% {
+    width: 0;
+  }
+  50%,
+  60% {
+    width: 20ch; /* Adjust based on text length */
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* type writer effect ends */

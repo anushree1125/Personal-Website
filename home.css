@@ -23,6 +23,7 @@ a:visited {
 }
 a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 .mainContainer {
   width: 100%;
@@ -38,6 +39,11 @@ img {
   border-radius: 10px;
   opacity: 0.9;
   border: 4px double rgb(26, 13, 13);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .resumeBtn {
   /* width: 150px; */
@@ -47,11 +53,14 @@ img {
   color: white;
   font-family: monospace;
   font-size: clamp(0.875rem, 2vw, 1.125rem);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .resumeBtn:hover {
   cursor: pointer;
-  background-color: white;
-  color: black;
+  /* background-color: white;
+  color: black; */
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .footer {
   position: absolute;
@@ -71,15 +80,21 @@ i:hover {
   border-bottom: 2px solid black;
   cursor: pointer;
 }
+
+.bounce {
+  animation: slowBounce 2s ease-in-out infinite;
+}
+@keyframes slowBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Moves up */
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  /* body {
-      font-size: 16px;
-      padding: 15px;
-    } */
-  /* .container {
-      background-color: #ddd;
-      padding: 10px;
-    } */
   .mainContainer {
     width: 100%;
     display: flex;
