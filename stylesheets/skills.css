@@ -26,13 +26,6 @@ p {
   font-size: clamp(0.6rem, 2vw, 1.125rem); /* Responsive font size */
 }
 
-/* body {
-  font-size: 20px;
-}
-h2 {
-  text-align: center;
-} */
-
 .container {
   display: flex;
   flex-direction: row;
@@ -46,7 +39,6 @@ h2 {
   padding: 20px 10px;
   min-width: 120px;
   width: fit-content;
-  /* border: 1px solid rgb(0, 0, 0); */
   border-radius: 10px;
   text-align: center;
   background-color: white;
@@ -76,19 +68,17 @@ h2 {
   gap: 10px;
 }
 .courseCard {
-  /* border: 1px solid black; */
   text-align: left;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   animation: fadeIn 0.5s ease forwards;
   border-radius: 20px;
-  /* background-color: white; */
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: linear-gradient(90deg, #f8e8e8, #ffffff);
-  /* -webkit-background-clip: text; */
-  /* background-clip: text; */
+
   color: rgb(1, 1, 1);
 }
 @keyframes fadeIn {
@@ -126,7 +116,4 @@ h2 {
   .footer {
     position: relative;
   }
-  /* body {
-    font-size: 12px;
-  } */
 }
